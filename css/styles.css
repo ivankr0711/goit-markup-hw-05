@@ -288,6 +288,7 @@ img {
 
 .works {
  padding: 120px 0;
+
 }
 
 .works__title {
@@ -305,12 +306,15 @@ img {
     display: flex;
     flex-wrap: wrap;
     gap: 24px;
+    row-gap: 48px;
+    margin-bottom: 48px;
         
 }
 
 
 .works__wrapper{
-padding: 32px 0;
+padding: 32px 16px;
+border: 1px solid #e7e9fc;
 }
 
 .portfolio-title {
