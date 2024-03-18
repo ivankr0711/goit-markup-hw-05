@@ -80,9 +80,12 @@ img {
 }
 
 .container {
-    width: 1158px;
-    margin: 0 auto;
-    padding: 0 15px;
+    width: 100%;
+        max-width: 1200px;
+        padding-left: 15px;
+        padding-right: 15px;
+        margin-left: auto;
+        margin-right: auto;
 }
 
 
@@ -164,8 +167,13 @@ img {
 
 .hero {
     background-color: var(--color-navy-blue);
+    background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/people-office\ 1.png);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
     padding: 188px 0;
 }
+
 
 .hero__title {
     color: var(--color-white);
@@ -213,6 +221,7 @@ img {
 
 .company__item {
     width: 264px;
+   
 }
 
 .company__title {
@@ -230,6 +239,25 @@ img {
     font-size: 16px;
     line-height: 1.5;
 }
+
+.icon-hidden{
+    width: 264px;
+    height: 112px;
+    background-color: #f4f4fd;;
+    border: 1px solid #8e8f99;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+    
+} 
+
+.im-hidden{
+    fill: #2e2f42;
+stroke: transparent;
+}
+
 
 /* team!!!!!!!!!!! */
 .team {
@@ -282,8 +310,46 @@ img {
     font-size: 16px;
     line-height: 1.5;
     text-align: center;
+    margin-bottom: 10px;
+
 }
 
+/* соціальні мережи */
+.icon-list{
+    display: flex;
+    margin-left: 32px;
+    margin-right: 32px;
+    gap: 10px;
+    
+}
+.icon-card{
+display: flex;
+    flex-basis: calc((100%-3*10)/4);
+    height: 44px;
+}
+.icon-link{
+   width: 40px;
+   height: 40px;
+   background-color: #4d5ae5;
+   border-radius: 50%;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.icon-link:hover,
+.icon-link:focus {
+    color: rgb(99, 10, 233);
+    background-color: rgb(13, 233, 101);
+}
+
+   
+.icon-team {
+    fill: white;
+    stroke: transparent;
+    /* background-repeat: no-repeat;
+    background-size: contain; */
+}
 /* our profail !!!!!!! */
 
 .works {
@@ -336,12 +402,50 @@ border-top: none;
         text-align: center;
 }
 
-/* footer */
-.footer {
-    background-color: var(--color-navy-blue);
-    padding: 100px 0;
+.works_li{
+    position: relative;
+
+}
+.works_li:hover .sellers-cover-text{
+    transform: translateY(0);
 }
 
+.sellers-cover-text{
+    position: absolute;
+    top: 0;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #f4f4fd;
+    background-color: #4d5ae5;
+    padding-left: 40px;
+    padding-right: 40px;
+    display: flex;
+    padding-top: 40px;
+    height: 100%;
+    transform: translateY(100%);
+    transition: transform 250ms ease;
+}
+.sellers-cover-im{
+   position: relative; 
+   overflow: hidden;
+}
+
+/* footer */
+.footer {
+    display: flex;
+background-color: #2F303A;
+    padding: 60px 0;
+    
+}
+
+
+.box-footer{
+display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    margin-right: 70px;
+}
 .footer__logo-blue {
     color: var(--color-iris);
     font-family: 'Raleway', sans-serif;
@@ -366,9 +470,50 @@ border-top: none;
     width: 264px;
 }
 
+.footer-icon{
+    /* display: flex; */
+    
+    
+}
+
+.footer-media{
+    font-weight: 500;
+        font-size: 16px;
+        line-height: 1.5;
+        letter-spacing: 0.02em;
+        color: #fff;
+        margin-bottom: 20px;
+}
+
+.icon-list-footer{
+display: flex;
+    gap: 10px;
+}
+
+.icon-card-footer{
+    display: flex;
+        flex-basis: calc((100%-3*10)/4);
+        height: 4px;
+}
+
+.icon-link-footer{
+width: 40px;
+    height: 40px;
+    background-color: #4d5ae5;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-team-footer{
+fill: white;
+    stroke: transparent;
+}
+
 /* Page Portfolio */
 
-.gallery {
+/* .gallery {
     padding: 96px 0 120px;
 }
 
@@ -429,4 +574,4 @@ border-top: none;
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-}
+} */
