@@ -460,7 +460,7 @@ background-color: #2F303A;
 .container-footer{
     display: flex;
     align-items: baseline;
-    margin-right: 120px
+    margin-right: 120px;
 }
 
 .box-footer{
@@ -468,6 +468,8 @@ display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     margin-right: 70px;
+    margin-right: 120px;
+    
     
 }
 .footer__logo-blue {
