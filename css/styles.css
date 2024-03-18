@@ -256,6 +256,8 @@ img {
 .im-hidden{
     fill: #2e2f42;
 stroke: transparent;
+width: 64px;
+height: 64px;
 }
 
 
@@ -347,6 +349,8 @@ display: flex;
 .icon-team {
     fill: white;
     stroke: transparent;
+    width: 16px;
+    height: 16px;
     /* background-repeat: no-repeat;
     background-size: contain; */
 }
@@ -509,6 +513,8 @@ width: 40px;
 .icon-team-footer{
 fill: white;
     stroke: transparent;
+    width: 20px;
+    height: 20px;
 }
 
 /* Page Portfolio */
