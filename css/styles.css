@@ -595,9 +595,12 @@ border: 1px solid #fff;
     width: 264px;
     height: 40px;
     background-color: transparent;
-    padding-left: 24px;
+    padding-left: 16px;
     color: #ffffff;;
-    
+    font-size: 12px;
+    line-height: 2;
+    letter-spacing: 0.04em;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 .footer-input::placeholder {
@@ -627,7 +630,9 @@ justify-content: center;
 align-items: center;
 }
 
-
+.footer-label{
+    gap: 24px;
+}
 
 
 
@@ -663,7 +668,7 @@ align-items: center;
     border-radius: 4px; 
     transform: translate(-50%, -50%);
 padding: 40px;
-box-shadow: зі значенням 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -730,14 +735,17 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     border-color: #4D5AE5;
 }
 .modal-input:active + .modal-icon{
-    fill: #404bbf;
+    fill: #4D5AE5;;
 }
+/* .modal-icon:focus{
+    fill: #4D5AE5;
+} */
 
 .modal-field{
-   margin-bottom: 24px; 
+   margin-bottom: 16px; 
 }
 
-.modal-label span{
+.modal-label {
 font-size: 12px;
 line-height: 1.17;
 letter-spacing: 0.04em;
@@ -758,6 +766,8 @@ color: #8e8f99;
     gap: 4px;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
+
 
 
 .modal-input-wrap{
@@ -797,13 +807,11 @@ outline: transparent;
         font-style: 14px;
             color: #2e2f42;
     }
-    .modal-check:checked + .check-text span{
+    .visually-hidden:checked + .check-text span{
        background-color: #404bbf;
     }
 
-    .modal-check{ 
-        
-    }
+   
 
 .check-text span{
     font-size: 12px;
@@ -820,7 +828,7 @@ color: #8e8f99;
 }
 
 .span-check-text{
-    width: 16px;
+    /* width: 16px;
     height: 16px;
     border: 1px solid rgba(46, 47, 66, 0.4);
 border-radius: 2px;
@@ -828,8 +836,25 @@ transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cu
 display: inline-flex;
 align-items: center;
 justify-content: center;
-fill: transparent;
+fill: transparent; */
 }
+
+.modal-send{
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    background-color: #4D5AE5;
+    border: none;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+
+
+
+
 /* Page Portfolio */
 
 /* .gallery {
