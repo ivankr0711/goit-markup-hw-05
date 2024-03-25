@@ -575,6 +575,14 @@ width: 24px;
    
 }
 
+.icon-team-footer:hover {
+    fill: #ffffff;
+}
+
+.icon-team-footer:focus {
+    fill: #ffffff;
+}
+
 .footer-bottom{
     /* display: flex;
     justify-content: space-between;
@@ -697,23 +705,12 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 
-.modal-close:hover{
-fill: #404bbf;
-border: none;
-    
-}
-.modal-close:focus{
-    fill: #404bbf;
-    border: none;
-}
-
-.icon-team-footer:hover {
+.modal-close:hover,
+.modal-close:focus svg{
 fill: #ffffff;
+border: none;
 }
 
-..icon-team-footer:focus {
-    fill: #ffffff;
-}
 
 .modal-title {
     font-weight: 500;
