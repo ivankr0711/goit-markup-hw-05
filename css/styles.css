@@ -843,7 +843,7 @@ outline: transparent;
 }
 
 .check-text-span {
-    position: relative;
+position: relative;
 width: 16px;
 height: 16px;
 border-radius: 2px;
