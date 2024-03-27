@@ -677,7 +677,6 @@ align-items: center;
     background-color: #FCFCFC;;
     border-radius: 4px; 
     transform: translate(-50%, -50%);
-padding: 40px;
 box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -706,11 +705,20 @@ transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
 
 .modal-close:hover,
-.modal-close:focus svg{
+.modal-close:focus {
 fill: #ffffff;
 border: none;
 }
 
+.modal-close:hover icon-close {
+    fill: #ffffff;
+    border: none;
+}
+
+.modal-close:hover {
+    background-color: #404bbf;
+    border: none;
+}
 
 .modal-title {
     font-weight: 500;
@@ -750,7 +758,7 @@ transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 .modal-input:focus {
     border-color: #4D5AE5;
 }
-.modal-input:active + .modal-icon{
+.modal-input:focus + .modal-icon{
     fill: #4D5AE5;;
 }
 .modal-icon:focus{
@@ -827,7 +835,7 @@ outline: transparent;
 .modal-check{
 
 }
-.visually-hidden:checked + .check-text-span{
+.visually-hidden:checked + .check-text>span{
     background-color: #404bbf;;
     border: none;
     fill: #F4F4FD;;
@@ -838,12 +846,12 @@ outline: transparent;
         line-height: 1.17;
         letter-spacing: 0.04em;
         color: #8e8f99;
-        display: flex;
-        align-items: center;
+        /* display: block; */
+        disp ay: inline-flex;
+        
 }
 
 .check-text-span {
-position: relative;
 width: 16px;
 height: 16px;
 border-radius: 2px;
@@ -870,6 +878,8 @@ color: #4d5ae5;
 text-decoration: underline;
 text-decoration-skip-ink: none;
 }
+
+.check-text + 
 
 /*cknopka */
 .modal-send{
